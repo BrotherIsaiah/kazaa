@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import logoWhite from "./logoW.svg";
 import background from './background.jpg'
+import Cards from "../Components/Cards";
 export default function Root() {
   return (
     <>
@@ -21,7 +22,9 @@ export default function Root() {
       <body>
         <div className="container">
         <img id='banner' src={background} alt="" />
+        <p className="center-text">Chez vous, partout et ailleurs</p>
         </div>
+        
         
       </body>
       <footer>
