@@ -1,10 +1,11 @@
 import logo from "./logo.svg";
 import logoWhite from "./logoW.svg";
 import background from './background.jpg'
-import Cards from "../Components/Cards";
+import { Outlet } from "react-router-dom";
 export default function Root() {
   return (
     <>
+    
       <header>
         <img src={logo} alt="Le logo de Kasa" />
 
@@ -19,14 +20,16 @@ export default function Root() {
           </ul>
         </nav>
       </header>
-      <body>
+      
         <div className="container">
         <img id='banner' src={background} alt="" />
         <p className="center-text">Chez vous, partout et ailleurs</p>
         </div>
         
+        <Outlet />
         
-      </body>
+        
+      
       <footer>
         <img src={logoWhite} alt="" />
         <p>2020 Tous droit réservé</p>

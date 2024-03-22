@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Root from "./routes/root";
-import Cards from './Components/Cards';
+import TheCards from "./Components/Cards";
 
 import {
   createBrowserRouter,
@@ -13,12 +13,13 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    children:[
+    children: [
       {
-        path: "/",
-        element: <Cards />,
-      }
-    ]
+      path:'/',
+      element: <TheCards />,
+    }
+    ],
+    
   },
 ]);
 

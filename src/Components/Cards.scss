@@ -1,0 +1,22 @@
+.cardContainer{
+    border-radius: 25px;
+    background: #F6F6F6;
+    display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1em;
+}
+
+.firstCard{
+    display: grid;
+    width: 18vw;
+  height: 53VH;
+    color: white;
+    border-radius: 10px;
+    background: #FF6060 linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(10, 10, 10, 0.00) 42%, rgba(4, 4, 4, 0.20) 99.99%, rgba(0, 0, 0, 0.50) 100%);
+p{
+    display: grid;
+    justify-content: flex-start;
+    align-content: flex-end;
+}
+}
