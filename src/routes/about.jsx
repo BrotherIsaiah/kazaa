@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import logoWhite from "./logoW.svg";
-import about_background from './background.jpg'
-
+import about_background from './about_background.jpg'
+import { Outlet, Link } from "react-router-dom";
 export default function AboutPage(){
     return(
 <>
@@ -11,7 +11,7 @@ export default function AboutPage(){
       <nav>
         <ul>
           <li>
-            <a href="#">Accueil</a>
+          <Link to="/">Accueil</Link>
           </li>
           <li>
             <a href="#">À propos</a>
@@ -22,8 +22,9 @@ export default function AboutPage(){
     
       <div className="container">
       <img id='banner' src={about_background} alt="" />
-      <p className="center-text">Chez vous, partout et ailleurs</p>
       </div>
+
+      <Outlet />
 
     <footer>
       <img src={logoWhite} alt="" />

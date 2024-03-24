@@ -5,6 +5,7 @@ import Root from "./routes/root";
 import TheCards from "./Components/Cards";
 import AboutPage from "./routes/about";
 import ErrorPage from "./routes/error-page";
+import TheCollapse from "./Components/Collapse";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -20,9 +21,15 @@ const router = createBrowserRouter([
     ],
   },
   {
-  path: "/about",
-  element: <AboutPage />,
-  }
+    path: "/about",
+    element: <AboutPage />,
+    children: [
+      {
+        path: "/about",
+        element: <TheCollapse />,
+      },
+    ],
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
