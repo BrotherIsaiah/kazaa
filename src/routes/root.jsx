@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import logoWhite from "./logoW.svg";
 import background from './background.jpg'
 import { Outlet, Link } from "react-router-dom";
+import AboutPage from "./about";
 export default function Root() {
   return (
     <>
@@ -15,7 +16,7 @@ export default function Root() {
               <a href="#">Accueil</a>
             </li>
             <li>
-              <Link to = {`about`}>A propos</Link>
+            <Link to="/about">A propos</Link>
             </li>
           </ul>
         </nav>
