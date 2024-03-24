@@ -49,3 +49,21 @@ footer{
         width: 10%;
     }
 }
+
+#error-page{
+display: flex;
+flex-direction: column;
+justify-content: center;
+color: #FF6060;
+text-align: center;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 700;
+p:first-child{
+font-size: 10em;
+margin: 0;
+}
+a{
+    margin-block: 2em;
+}
+}

@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import logoWhite from "./logoW.svg";
 import background from './background.jpg'
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 export default function Root() {
   return (
     <>
@@ -15,7 +15,7 @@ export default function Root() {
               <a href="#">Accueil</a>
             </li>
             <li>
-              <a href="#">À propos</a>
+              <Link to = {`about`}>A propos</Link>
             </li>
           </ul>
         </nav>
