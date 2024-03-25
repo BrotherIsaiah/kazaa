@@ -1,39 +1,22 @@
-import logo from "./logo.svg";
-import logoWhite from "./logoW.svg";
-import background from './background.jpg'
-import { Outlet, Link } from "react-router-dom";
-import AboutPage from "./about";
+import { Outlet } from "react-router-dom";
+import TheHeader from "../Components/header";
+import TheBanner from "../Components/banner";
+import TheFooter from "../Components/footer";
 export default function Root() {
   return (
     <>
     
-      <header>
-        <img src={logo} alt="Le logo de Kasa" />
-
-        <nav>
-          <ul>
-            <li>
-              <a href="#">Accueil</a>
-            </li>
-            <li>
-            <Link to="/about">A propos</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
+    <TheHeader />
+    
       
-        <div className="container">
-        <img id='banner' src={background} alt="" />
-        <p className="center-text">Chez vous, partout et ailleurs</p>
-        </div>
-        
+      <div className="container">
+        <TheBanner />
+      </div>
+      
         <Outlet />
-        
-        
       
       <footer>
-        <img src={logoWhite} alt="" />
-        <p>2020 Tous droit réservé</p>
+      <TheFooter />
       </footer>
     </>
   );

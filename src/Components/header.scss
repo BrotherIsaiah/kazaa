@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    text-decoration: none;
+    list-style: none;
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}

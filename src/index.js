@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import "./input.css";
 import Root from "./routes/root";
-import TheCards from "./Components/Cards";
 import AboutPage from "./routes/about";
 import ErrorPage from "./routes/error-page";
 import TheCollapse from "./Components/Collapse";
+import TheCards from "./Components/Cards";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 
 const router = createBrowserRouter([
   {
@@ -15,9 +16,10 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path:"/",
         element: <TheCards />,
       },
+      
     ],
   },
   {
