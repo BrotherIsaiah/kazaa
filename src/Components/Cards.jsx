@@ -1,14 +1,15 @@
 import "./Cards.css";
 import { Link } from "react-router-dom";
+import "../routes/logements.json"
 export default function TheCards() {
   return (
     <>
       <div className="cardContainer">
-        <a href="">
+        <Link to="/location">
           <div className="firstCard">
             <p>Titre loc</p>
           </div>
-        </a>
+        </Link>
         <div className="firstCard">
           <p>Titre loc</p>
         </div>

@@ -6,7 +6,9 @@ import AboutPage from "./routes/about";
 import ErrorPage from "./routes/error-page";
 import TheCollapse from "./Components/Collapse";
 import TheCards from "./Components/Cards";
+import "./routes/logements.json"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import LocationPage from "./routes/location";
 
 
 const router = createBrowserRouter([
@@ -18,8 +20,7 @@ const router = createBrowserRouter([
       {
         path:"/",
         element: <TheCards />,
-      },
-      
+      }, 
     ],
   },
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/location",
+    element: <LocationPage />
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

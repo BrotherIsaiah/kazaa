@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+
 import TheHeader from "../Components/header";
 import TheCollapse from "../Components/Collapse";
 import TheFooter from "../Components/footer";
