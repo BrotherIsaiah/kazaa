@@ -34,7 +34,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/location",
+    path: "location/:id",
     element: <LocationPage />
   }
 ]);
