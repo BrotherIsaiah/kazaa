@@ -1,4 +1,29 @@
-
+.slideShow {
+    position: relative;
+    width: fit-content;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    img {
+      width: 70vw;
+      height: 70vh;
+      object-fit: cover;
+    }
+    .arrow-left {
+      position: absolute;
+      font-size: xxx-large;
+      right: 95%;
+      top: 50%;
+      color: white;
+    }
+    .arrow-right {
+      position: absolute;
+      font-size: xxx-large;
+      left: 95%;
+      top: 50%;
+      color: white;
+    }
+  }
+  
 
 
 #error-page{

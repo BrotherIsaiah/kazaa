@@ -8,17 +8,7 @@ export default function TheSlides() {
     
     return(
         <>
-        <div className="slideShow">
-          {locationList.map((location) => (
-            <>
-            <img src={location[0].id} alt="" />
-            <FontAwesomeIcon icon={faAngleLeft} className='arrow-left' />
-            <FontAwesomeIcon icon={faAngleRight} className='arrow-right' />
-            </>
-
-          ))}
         
-        </div>
         <h1>
         
         </h1>
