@@ -23,7 +23,10 @@ export default function LocationPage() {
       prevIndex === 0 ? location.pictures.length - 1 : prevIndex - 1
     );
   }
-
+const collapseLocation = {
+  width: "45%",
+  height: "17vh"
+}
   return (
     <>
       <TheHeader />
@@ -70,8 +73,8 @@ export default function LocationPage() {
             </div>
           </div>
           <div className="description-equipments">
-            <TheCollapse title="Description" className="collapse-style" />
-            <TheCollapse title="Equipements" className="collapse-style"/>
+            <TheCollapse title="Description" style={collapseLocation} />
+            <TheCollapse title="Equipements" style={collapseLocation} />
           </div>
         </div>
       </main>

@@ -66,10 +66,6 @@
   display: flex;
   justify-content: space-between;
 }
-.description-equipments .collapse-style {
-  width: 45%;
-  height: 17vh;
-}
 
 #error-page {
   display: flex;
