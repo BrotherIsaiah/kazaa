@@ -69,9 +69,9 @@ export default function LocationPage() {
               <FontAwesomeIcon icon={faStar} />
             </div>
           </div>
-          <div>
-            <TheCollapse title="Description" />
-            <TheCollapse title="Equipements"/>
+          <div className="description-equipments">
+            <TheCollapse title="Description" className="collapse-style" />
+            <TheCollapse title="Equipements" className="collapse-style"/>
           </div>
         </div>
       </main>
