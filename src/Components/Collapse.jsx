@@ -1,22 +1,11 @@
 import "./Collapse.css";
 
-export default function TheCollapse() {
+export default function TheCollapse({title}) {
   return (
     <>
-      <div className="collapseContainer">
-        <div className="collapse">
-          <h3>Fiabilité</h3>
-        </div>
-        <div className="collapse">
-          <h3>Respect</h3>
-        </div>
-        <div className="collapse">
-          <h3>Service</h3>
-        </div>
-        <div className="collapse">
-          <h3>Sécurité</h3>
-        </div>
-      </div>
+        <article className="collapse">
+          <h3>{title}</h3>
+        </article>
     </>
   );
 }
