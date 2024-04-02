@@ -10,7 +10,7 @@ export default function TheHeader() {
         <nav>
           <ul>
             <li>
-              <a href="#">Accueil</a>
+              <Link to="/">Accueil</Link>
             </li>
             <li>
               <Link to="/about">A propos</Link>

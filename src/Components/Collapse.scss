@@ -9,4 +9,15 @@
       rgba(4, 4, 4, 0.2) 99.99%,
       rgba(0, 0, 0, 0.5) 100%
     );
+    &.collapsed {
+      p{
+        height: 0;
+      overflow: hidden;
+      }
+    }
+    
+    .rotated{
+      transform: rotate(180deg);
+      transition: transform 0.3s ease-in-out;
+    }
 }
