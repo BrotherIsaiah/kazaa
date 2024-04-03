@@ -1,3 +1,8 @@
+
+article{
+  width: 80%;
+  margin-inline: auto;
+}
 .collapse {
   color: white;
   border-radius: 10px;
@@ -9,15 +14,28 @@
       rgba(4, 4, 4, 0.2) 99.99%,
       rgba(0, 0, 0, 0.5) 100%
     );
-    &.collapsed {
-      p{
-        height: 0;
-      overflow: hidden;
-      }
-    }
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+.title-icon{
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 1em;
+  align-items: baseline;
+}
     
     .rotated{
       transform: rotate(180deg);
       transition: transform 0.3s ease-in-out;
     }
+    p{
+      background-color: lightgray;
+      margin: 0;
+      color: black;
+    }
+    p.collapsed{
+      display: none;
+    }
 }
+
+

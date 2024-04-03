@@ -9,6 +9,7 @@ import TheCards from "./Components/Cards";
 import "./routes/logements.json"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LocationPage from "./routes/location";
+import TheBanner from "./Components/banner";
 
 
 const router = createBrowserRouter([

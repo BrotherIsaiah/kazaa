@@ -1,13 +1,31 @@
+article {
+  width: 80%;
+  margin-inline: auto;
+}
+
 .collapse {
   color: white;
   border-radius: 10px;
   background: #ff6060 linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.2) 99.99%, rgba(0, 0, 0, 0.5) 100%);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
-.collapse.collapsed p {
-  height: 0;
-  overflow: hidden;
+.collapse .title-icon {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 1em;
+  align-items: baseline;
 }
 .collapse .rotated {
   transform: rotate(180deg);
   transition: transform 0.3s ease-in-out;
+}
+.collapse p {
+  background-color: lightgray;
+  margin: 0;
+  color: black;
+}
+.collapse p.collapsed {
+  display: none;
 }/*# sourceMappingURL=Collapse.css.map */
