@@ -23,9 +23,39 @@ export default function LocationPage() {
       prevIndex === 0 ? location.pictures.length - 1 : prevIndex - 1
     );
   }
-const collapseLocation = {
-  width: "45%",
-  height: "17vh"
+
+
+const renderRatingStars = (rating) => {
+  const maxRating = 5;
+  const filledStars = parseInt(rating);
+  const emptyStars = maxRating - filledStars;
+
+  const stars = [];
+
+  // Ajouter les étoiles pleines
+  for (let i = 0; i < filledStars; i++) {
+    stars.push(
+      <FontAwesomeIcon key={i} icon={faStar} style={{ color: "#FF6060" }} />
+    );
+  }
+  // Ajouter les étoiles vides
+  for (let i = 0; i < emptyStars; i++) {
+    stars.push(
+      <FontAwesomeIcon key={filledStars + i} icon={faStar} style={{ color: "#C4C4C4" }} />
+    );
+  }
+
+  return stars;
+};
+
+function EquipmentList({ equipments }) {
+  return (
+    <ul>
+      {equipments.map((equipment, index) => (
+        <li key={index}>{equipment}</li>
+      ))}
+    </ul>
+  );
 }
   return (
     <>
@@ -65,16 +95,12 @@ const collapseLocation = {
             </div>
 
             <div className="rateStar">
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
+            {renderRatingStars(location.rating)}
             </div>
           </div>
           <div className="description-equipments">
-            <TheCollapse title="Description" style={collapseLocation} />
-            <TheCollapse title="Equipements" style={collapseLocation} />
+            <TheCollapse title="Description" text={location.description}  />
+            <TheCollapse title="Equipements"  text={<EquipmentList equipments={location.equipments} />}/>
           </div>
         </div>
       </main>

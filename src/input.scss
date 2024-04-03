@@ -74,8 +74,8 @@ body{
     p {
       background-color: #ff6060;
       border-radius: 10px;
-      width: 10%;
-      padding: 0.2em;
+      width: fit-content;
+      padding: 0.4em;
       color: white;
       font-weight: 700;
       text-align: center;
@@ -93,6 +93,7 @@ body{
 .description-equipments{
   display: flex;
   justify-content: space-between;
+  gap: 5em;
 }
 
 .articles-container{
