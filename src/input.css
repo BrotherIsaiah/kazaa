@@ -1,6 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  margin-block: 1em;
 }
 
 .container {
@@ -25,6 +28,8 @@ body {
   color: white;
   transform: translate(-50%, -50%);
   font-size: xxx-large;
+  width: 100%;
+  text-align: center;
 }
 
 .slideShow {
@@ -64,6 +69,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.info-wrapper .title-location img {
+  border-radius: 50%;
+}
 .info-wrapper .title-location h1 {
   color: #ff6060;
 }
@@ -97,6 +105,13 @@ body {
   justify-content: space-between;
   gap: 5em;
 }
+.description-equipments ul {
+  display: grid;
+  gap: 0.3em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 .articles-container {
   display: grid;
@@ -109,7 +124,7 @@ body {
   justify-content: center;
   color: #ff6060;
   text-align: center;
-  font-family: Montserrat;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
 }
@@ -119,4 +134,14 @@ body {
 }
 #error-page a {
   margin-block: 2em;
+  color: black;
+}
+
+@media screen and (max-width: 576px) {
+  .container h1 {
+    font-size: xx-large;
+  }
+  footer img {
+    width: 35%;
+  }
 }/*# sourceMappingURL=input.css.map */

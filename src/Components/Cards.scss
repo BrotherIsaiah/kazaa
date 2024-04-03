@@ -21,18 +21,29 @@
         rgba(0, 0, 0, 0.5) 100%
       );
       
-      img{
-        width: 100%;
-
-      }
+      
     a {
       display: grid;
       justify-content: flex-start;
       align-content: flex-end;
       color: white;
       text-decoration: none;
+      
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }
 
-
+@media screen and (max-width: 576px) {
+  .cardContainer {
+    grid-template-columns: auto; // Modifier le nombre de colonnes
+    .firstCard{
+      width: fit-content;
+      height: fit-content;
+    }
+  }
+}
