@@ -1,8 +1,12 @@
 import "./banner.css";
-export default function TheBanner({ backgroundImage }) {
+export default function TheBanner({ backgroundImage, title }) {
   return (
-    <div className="container">
+    <>
+      
+      <div className="container">
       <img src={backgroundImage} alt="Bannière de Kasa" />
-    </div>
+      <h1>{title}</h1>
+      </div>
+    </>
   );
 }

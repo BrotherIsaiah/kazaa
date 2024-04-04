@@ -5,35 +5,38 @@
   gap: 1em;
   grid-template-columns: repeat(3, 1fr);
   padding: 1em;
-  .firstCard {
+
+  a {
     display: grid;
-    width: 15vw;
-    height: 15vw;
+    justify-content: flex-start;
+    align-content: flex-end;
     color: white;
-    border-radius: 10px;
+    text-decoration: none;
     margin-inline: auto;
-    background: #ff6060
-      linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(10, 10, 10, 0) 42%,
-        rgba(4, 4, 4, 0.2) 99.99%,
-        rgba(0, 0, 0, 0.5) 100%
-      );
-      
-      
-    a {
+    .firstCard {
       display: grid;
-      justify-content: flex-start;
-      align-content: flex-end;
+      width: 25vw;
+      height: 25vw;
       color: white;
-      text-decoration: none;
-      
-    }
-    img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      border-radius: 10px;
+      padding: 0.5em;
+      background: #ff6060
+        linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(10, 10, 10, 0) 42%,
+          rgba(4, 4, 4, 0.2) 99.99%,
+          rgba(0, 0, 0, 0.5) 100%
+        );
+      img {
+        width: 100%;
+        height: 20vw;
+        object-fit: cover;
+      }
+      p{
+        text-align: center;
+        margin: 0;
+      }
     }
   }
 }
@@ -41,9 +44,16 @@
 @media screen and (max-width: 576px) {
   .cardContainer {
     grid-template-columns: auto; // Modifier le nombre de colonnes
-    .firstCard{
-      width: fit-content;
-      height: fit-content;
+    a{
+      .firstCard {
+        width: 80vw;
+        height: 25vh;
+        
+        img{
+          height: 35vw;
+        }
+      }
     }
+    
   }
 }

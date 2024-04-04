@@ -7,9 +7,9 @@ export default function AboutPage() {
   return (
     <>
       <TheHeader />
-      <div className="container">
-        <TheBanner backgroundImage={about_background} />
-      </div>
+      
+      <TheBanner backgroundImage={about_background} />
+      
 
       <div className="articles-container">
         <TheCollapse
@@ -32,9 +32,9 @@ export default function AboutPage() {
         />
       </div>
 
-      <footer>
+      
         <TheFooter />
-      </footer>
+      
     </>
   );
 }

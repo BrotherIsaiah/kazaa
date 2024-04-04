@@ -40,4 +40,8 @@ article{
     }
 }
 
-
+@media screen and (max-width: 576px) {
+  article{
+    width: 100%;
+  }
+}

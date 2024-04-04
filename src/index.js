@@ -27,12 +27,6 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <AboutPage />,
-    children: [
-      {
-        path: "/about",
-        element: <TheCollapse />,
-      },
-    ],
   },
   {
     path: "location/:id",

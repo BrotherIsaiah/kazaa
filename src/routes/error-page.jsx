@@ -16,9 +16,9 @@ export default function ErrorPage() {
         <Link to="/">Revenir à la page d'accueil</Link>
       </div>
       
-      <footer>
+      
         <TheFooter />
-      </footer>
+      
     </>
   );
 }

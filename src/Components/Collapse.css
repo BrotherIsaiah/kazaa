@@ -30,4 +30,10 @@ article {
 }
 .collapse p.collapsed {
   display: none;
+}
+
+@media screen and (max-width: 576px) {
+  article {
+    width: 100%;
+  }
 }/*# sourceMappingURL=Collapse.css.map */

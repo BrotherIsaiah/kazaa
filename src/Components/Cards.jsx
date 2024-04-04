@@ -6,14 +6,12 @@ export default function TheCards() {
     <>
       <div className="cardContainer">
         {locationList.map((location) => (
-          
+          <Link to={`/location/${location.id}`} key={location.id}>
             <div className="firstCard">
-              <Link to={`/location/${location.id}`} key={location.id}>
-                <img src={location.cover} alt="" />
+              <img src={location.cover} alt="" />
               <p>{location.title}</p>
-              </Link>
             </div>
-          
+          </Link>
         ))}
       </div>
     </>

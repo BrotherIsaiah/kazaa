@@ -82,7 +82,7 @@ function EquipmentList({ equipments }) {
               <h1>{location.title}</h1>
               <p>{location.location}</p>
             </div>
-            <div>
+            <div className="host-info">
               <img src={location.host.picture} alt={location.host.name} />
               <p>{location.host.name}</p>
             </div>
@@ -105,9 +105,9 @@ function EquipmentList({ equipments }) {
         </div>
       </main>
 
-      <footer>
+      
         <TheFooter />
-      </footer>
+      
     </>
   );
 }
