@@ -9,6 +9,7 @@ import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import TheCollapse from "../Components/Collapse";
 export default function LocationPage() {
+  //code du carroussel
   const { id } = useParams();
   const location = locationList.find((loc) => loc.id === id);
   const [imageIndex, setImageIndex] = useState(0);
@@ -25,6 +26,7 @@ export default function LocationPage() {
   }
 
 
+  //dynamiser les étoiles en fonction de rating
 const renderRatingStars = (rating) => {
   const maxRating = 5;
   const filledStars = parseInt(rating);
@@ -48,6 +50,7 @@ const renderRatingStars = (rating) => {
   return stars;
 };
 
+//liste des équipements sous forme <ul>
 function EquipmentList({ equipments }) {
   return (
     <ul>

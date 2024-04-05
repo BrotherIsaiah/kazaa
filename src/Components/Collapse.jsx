@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 export default function TheCollapse({ title, children, text }) {
+  //comportement de l'élement déroulant
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   const toggleCollapse = () => {
