@@ -21,14 +21,14 @@ article {
   transform: rotate(180deg);
   transition: transform 0.3s ease-in-out;
 }
-.collapse p {
+.collapse #text-area {
   background-color: #f4f2f2;
   margin: 0;
   color: black;
   line-height: 1.5;
   padding: 1em;
 }
-.collapse p.collapsed {
+.collapse #text-area.collapsed {
   display: none;
 }
 

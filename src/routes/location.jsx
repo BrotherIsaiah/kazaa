@@ -100,7 +100,9 @@ function EquipmentList({ equipments }) {
           </div>
           <div className="description-equipments">
             <TheCollapse title="Description" text={location.description}  />
-            <TheCollapse title="Equipements"  text={<EquipmentList equipments={location.equipments} />}/>
+            <TheCollapse title="Equipements" >
+            <EquipmentList equipments={location.equipments} />
+            </TheCollapse>
           </div>
         </div>
       </main>
