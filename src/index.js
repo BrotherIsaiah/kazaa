@@ -4,9 +4,8 @@ import "./input.css";
 import Root from "./routes/root";
 import AboutPage from "./routes/about";
 import ErrorPage from "./routes/error-page";
-import TheCards from "./Components/Cards";
 import "./routes/logements.json"
-import { createBrowserRouter, RouterProvider, redirect } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LocationPage from "./routes/location";
 
 
