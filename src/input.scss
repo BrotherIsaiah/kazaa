@@ -18,6 +18,13 @@ main {
     height: 80vh;
     object-fit: cover;
   }
+  .slideIndicator{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  font-size: x-large;
+  color: white;
+  }
   .arrow-left {
     position: absolute;
     font-size: xxx-large;

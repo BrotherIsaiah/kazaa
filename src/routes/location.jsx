@@ -82,19 +82,30 @@ export default function LocationPage() {
 
       <main>
         <div className="slideShow">
-          <FontAwesomeIcon
-            icon={faAngleLeft}
-            className="arrow-left"
-            onClick={prevSlide}
-          />
-          {location && location.pictures && (
-            <img src={location.pictures[imageIndex]} alt="Carrousel" />
+          {location.pictures.length > 1 && (
+            <FontAwesomeIcon
+              icon={faAngleLeft}
+              className="arrow-left"
+              onClick={prevSlide}
+            />
           )}
-          <FontAwesomeIcon
-            icon={faAngleRight}
-            className="arrow-right"
-            onClick={nextSlide}
-          />
+          {location && location.pictures && (
+            <>
+              <img src={location.pictures[imageIndex]} alt="Carrousel" />
+              {location.pictures.length > 1 && (
+                <div className="slideIndicator">{`${imageIndex + 1}/${
+                  location.pictures.length
+                }`}</div>
+              )}
+            </>
+          )}
+          {location.pictures.length > 1 && (
+            <FontAwesomeIcon
+              icon={faAngleRight}
+              className="arrow-right"
+              onClick={nextSlide}
+            />
+          )}
         </div>
 
         <div className="info-wrapper">

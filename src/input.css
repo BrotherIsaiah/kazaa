@@ -19,6 +19,13 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.slideShow .slideIndicator {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  font-size: x-large;
+  color: white;
+}
 .slideShow .arrow-left {
   position: absolute;
   font-size: xxx-large;
